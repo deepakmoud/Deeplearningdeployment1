@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+
+    <!-- Bootstrap CSS -->
+    <link href="{{ url_for('static',filename = 'css/bootstrap.min.css')  }}" rel="stylesheet">
+
+    <link href="{{ url_for('static',filename = 'css/style.css')  }}" rel="stylesheet">
+    <title>Deep Learning</title>
+</head>
+<body>
+    <!-- navbar -->
+    <nav style="width: 100%;" class="navbar navbar-dark bg-secondary">
+        <a class="  navbar-brand" href="#" style="margin-left: 0px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-bottom:0px;">
+             <img style="max-height: auto; width:100%;" src="{{ url_for('static',filename = 'image/PIET logo with tagline1.jpg')  }}" 
+             class="img-responsive" style="margin-top:0px;style=width: auto; height: auto; min-width:100%; min-height: auto;">
+            <ul class="nav navbar-nav navbar-right">
+         
+           <a href="/" style="color: red; margin-right: 10px;">HOME</a>
+           </ul>
+        </a>
+    </nav>
+ 
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-5 d-none d-sm-block d-sm-none d-md-block d-md-none d-lg-block">
+    
+                <img src="{{ url_for('static',filename = 'image/rnn.gif')  }}" class="img-fluid"
+                    style="width: auto; height: auto;  max-width: 550px;max-height: 600px;">
+                    
+            </div>
+    
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-7 " style=" padding: 20px;">
+                <h1>Recurrent Neural Network</h1>
+                <h4 style="color: sandybrown"; style="text-align:justify">Recurrent Neural Network(RNN) are a type of Neural Network where the output from previous step are fed as input to the current step. In traditional neural networks, all the inputs and outputs are independent of each other, but in cases like when it is required to predict the next word of a sentence, the previous words are required and hence there is a need to remember the previous words..</h4>
+                <br>
+                <div class="row">
+                    
+                    <div class="col-12">
+    
+                        <h2>&#10032; Recurrent Neural Network</h2>
+                        <ul>
+    
+                            <li>NLP Moview review System</li>
+                            <li></li>
+                            <li> </li>
+                            
+                            
+                        </ul>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="container">
+        <div class="row">
+    
+            <h1>Recurrent Neural Network</h1>
+            <br><br>
+    
+            <div class="col-xs-12 col-md-4" style="padding-top: 30px;">
+                <div class="card zoom">
+                    <center> <img src="{{ url_for('static',filename = 'image/moviereview.gif')  }}" style="height: 275px;"
+                            class="card-img-top" alt="not found"></center>
+                    <div class="card-body">
+                        <h5 class="card-title"; style="text-align:center">NLP Moview Review System </h5>
+                        <p class="card-text"; style="text-align:justify"> It is an application to review movie using NLP. RNN is used for prediction  </p>
+                        <a href="/rnn/moviereview/moviereview"><button type="button"
+                                class="btn btn-outline-primary">Movie Review &#x270C;</button></a>
+                    </div>
+                </div>
+    
+            </div>
+    
+    
+    
+            
+    
+    
+    
+            
+           
+    
+    
+            
+        </div>
+    </div>
+
+
+<!-- footer -->
+<br><br>
+<div class="fixed-bottom ">
+    <div class="bg-secondary " style="min-height: 40px;">
+
+        <marquee style="color:#fff; margin-top: 7px;">
+            <h9>Developed by Department of Computer Engineering, PIET</h9>
+        </marquee>
+    </div>
+</div>
+<!-- change later-->
+<script src="{{ url_for('static',filename = 'js/bootstrap.bundle.min.js')  }}"></script>
+
+</body>
+
+</html>
